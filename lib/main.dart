@@ -14,12 +14,12 @@ class MyApp extends StatelessWidget {
       title: "Blocks App",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter Blocks App",
+          title: const Text("Flutter_Blocks_App",
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w700,
               )),
-          backgroundColor: const Color(0xff9E00FF),
+          backgroundColor: const Color(0xff9E0065),
           leading: const Icon(
             Icons.menu,
             color: Colors.white,
