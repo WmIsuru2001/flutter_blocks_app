@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_blocks_app/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,24 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Blocks App",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Flutter_Blocks_App",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w700,
-              )),
-          backgroundColor: const Color(0xff9E0065),
-          leading: const Icon(
-            Icons.menu,
-            color: Colors.white,
-            size: 30,
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
