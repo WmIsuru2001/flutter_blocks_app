@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_blocks_app/widgets/icon_card.dart';
+import 'package:flutter_blocks_app/widgets/large_container.dart';
 import 'package:flutter_blocks_app/widgets/small_container.dart';
+import 'package:flutter_blocks_app/widgets/social_icon_box.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -71,6 +74,102 @@ class HomePage extends StatelessWidget {
                         "In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree",
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const LargeContainer(
+                title: "open-sourcee",
+                description:
+                    "Flutter is an open-source UI (User Interface) software development kit created by Google.Flutter is an open-source UI (User Interface) software development kit created by Google.",
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const LargeContainer(
+                title: "Widget Tree",
+                description:
+                    "In Flutter, the user interface is represented as a tree of widgets, commonly known as the widget treeIn Flutter, the user interface is represented as a tree of widgets, commonly known as the widget tree",
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconCard(
+                    iconBgColor: Color(0xff06FFA5),
+                    iconName: Icons.edit,
+                    iconColor: Color(0xff333333),
+                  ),
+                  IconCard(
+                    iconBgColor: Color(0xffCC00FF),
+                    iconName: Icons.alarm,
+                    iconColor: Color(0xffFFFFFF),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Divider(
+                color: Color(0xff3B3636),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Flutter Blocks App",
+                      style: TextStyle(
+                        color: Color(0xffE5F0FF),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Flutter is an open-source UI (User Interface) software development kit created by Google. It is used to build natively compiled applications for mobile, web, and desktop from a single codebase. Flutter was first introduced in 2015 and has gained significant popularity among developers due to its fast development cycle, expressive and flexible UI components, and excellent performance.",
+                      style: TextStyle(
+                        color: Color(0xff3B3636),
+                        fontSize: 13,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SocialIconBox(
+                      socialIconName: Icons.facebook,
+                    ),
+                    SocialIconBox(
+                      socialIconName: Icons.one_x_mobiledata,
+                    ),
+                    SocialIconBox(
+                      socialIconName: Icons.close,
+                    ),
+                    SocialIconBox(
+                      socialIconName: Icons.fmd_good,
+                    ),
+                    SocialIconBox(
+                      socialIconName: Icons.face,
+                    ),
+                  ],
+                ),
               )
             ],
           ),
